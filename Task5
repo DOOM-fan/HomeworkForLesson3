@@ -1,0 +1,17 @@
+#Задание 5
+def Fib(n):
+    if n == -1: 
+        return 1
+    if n == 0:
+        return 0 
+    if n == 1:
+        return 1
+    elif n > 1:
+        return Fib(n-1) + Fib(n-2)
+    elif n < -1:
+        return Fib(n+2) - Fib(n+1)
+ans = []
+n = int(input())
+for i in range(-n, n + 1):
+    ans.append(Fib(i))
+print(ans)
