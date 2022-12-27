@@ -1,0 +1,9 @@
+#Задание 2
+numlist = []
+for i in range(int(input('Введите количество элементов'))):
+    numlist.append(int(input()))
+print(numlist)
+ans = []
+for i in range(0, int(len(numlist)/2 + 1)):
+    ans.append(numlist[i]*numlist[len(numlist) - 1 - i])
+print(ans)
