@@ -1,0 +1,12 @@
+#Задание 3
+numlist = []
+for i in range(int(input('Введите количество элементов'))):
+    numlist.append(float(input()))
+print(numlist)
+parts = []
+for element in numlist:
+    if element != int(element):
+        newelement = element - int(element)
+        parts.append(newelement)
+print(parts)
+print(max(parts) - min(parts))
