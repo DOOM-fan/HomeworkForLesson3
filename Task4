@@ -1,0 +1,7 @@
+Задание 4
+num1 = int(input())
+num2 = ''
+while num1 > 0:
+    num2 = str(num1%2) + num2
+    num1 //= 2
+print(num2)
