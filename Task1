@@ -1,0 +1,9 @@
+#Задание 1
+numlist = []
+for i in range(int(input('Введите количество элементов'))):
+    numlist.append(int(input()))
+print(numlist)
+ans = 0
+for i in range(1, len(numlist), 2):
+    ans += numlist[i]
+print(ans)
